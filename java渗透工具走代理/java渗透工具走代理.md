@@ -6,19 +6,19 @@
 
 
 
-开代理：全局路由
+#　0x01开代理：全局路由
 
 ![image-20240104153038762](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104153038762.png)
 
 
 
-监听端口：10808
+## 监听端口：10808
 
 ![image-20240104153300536](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104153300536.png)
 
 
 
-开proxifier
+# 0x02开proxifier
 
 
 
@@ -30,13 +30,13 @@
 
 
 
-设置代理规则
+## 设置代理规则
 
 ![image-20240104153354996](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104153354996.png)
 
 
 
-HttpExample2.java：http请求jsonip.com获取公网ip
+# 0x03 HttpExample2.java：http请求jsonip.com获取公网ip
 
 ```java
 import java.io.BufferedReader;
@@ -78,7 +78,7 @@ public class HttpExample2 {
 
 
 
-HttpExample.java：http请求python3开启http服务，查看请求的ip
+# 0x04 HttpExample.java：http请求python3开启http服务，查看请求的ip
 
 ```java
 import java.io.BufferedReader;
@@ -120,21 +120,21 @@ public class HttpExample {
 
 
 
-编译
+## 编译
 
 `javac HttpExample.java`
 
-生成
+## 生成
 
 `HttpExample.class`
 
 
 
-编译
+## 编译
 
 `javac HttpExample2.java`
 
-生成
+## 生成
 
 `HttpExample2.class`
 
@@ -142,7 +142,7 @@ public class HttpExample {
 
 
 
-开启python3 http服务
+# 0x05开启python3 http服务
 
 ![image-20240104153727765](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104153727765.png)
 
@@ -154,21 +154,21 @@ public class HttpExample {
 
 
 
-执行HttpExample2.class：`java HttpExample2`，公网IP为代理ip
+# 0x06执行HttpExample2.class：`java HttpExample2`，公网IP为代理ip
 
 ![image-20240104154159848](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104154159848.png)
 
-查看v2rayN日志，【socks->proxy】，已走代理
+## 查看v2rayN日志，【socks->proxy】，已走代理
 
 ![image-20240104154545043](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104154545043.png)
 
 
 
-执行HttpExample.class:`java HttpExample`
+# 0x07执行HttpExample.class:`java HttpExample`
 
 ![image-20240104154403127](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104154403127.png)
 
-请求ip为代理ip
+##　请求ip为代理ip
 
 ![image-20240104154417013](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104154417013.png)
 
@@ -176,13 +176,13 @@ public class HttpExample {
 
 
 
-查看v2rayN日志，【socks->proxy】，已走代理
+## 查看v2rayN日志，【socks->proxy】，已走代理
 
 ![image-20240104154800273](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104154800273.png)
 
 
 
-部署cve-2018-2894漏洞环境
+# 0x08部署cve-2018-2894漏洞环境
 
 ![image-20240104160115917](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104160115917.png)
 
@@ -192,7 +192,7 @@ public class HttpExample {
 
 
 
-webshell连接
+# 0x09 webshell连接
 
 ![image-20240104160148923](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104160148923.png)
 
@@ -202,7 +202,7 @@ webshell连接
 
 
 
-`tcpdump -i eth0 -w 1.pcap -vv` 抓包
+# 0x10`tcpdump -i eth0 -w 1.pcap -vv` 抓包
 
 ![image-20240104160222144](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104160222144.png)
 
@@ -210,13 +210,13 @@ webshell连接
 
 
 
-执行命令
+# 0x11执行命令
 
 ![image-20240104160322755](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104160322755.png)
 
 
 
-数据包查看攻击IP为代理IP
+# 0x12数据包查看攻击IP为代理IP
 
 ![image-20240104160426737](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104160426737.png)
 

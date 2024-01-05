@@ -88,7 +88,7 @@
 
 如图所示，直接让Jar工具的流量走代理打出去了
 
-3# Proxifier玩转代理
+3# Proxifier play zhuan 代理
 ================
 
 既然了解了 `Proxifier` 的基本配置，那不是应该骚起来吗~

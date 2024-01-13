@@ -160,7 +160,7 @@ public class HttpExample {
 
 ![image-20240104154403127](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104154403127.png)
 
-##　请求ip为代理ip
+## 请求ip为代理ip
 
 ![image-20240104154417013](java%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%B5%B0%E4%BB%A3%E7%90%86.assets/image-20240104154417013.png)
 

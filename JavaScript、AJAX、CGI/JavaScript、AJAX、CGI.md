@@ -1356,6 +1356,28 @@ for (i = 0; i < input.length;) {
 
 
 
+**5.三元运算符：condition ? valueIfTrue : valueIfFalse**
+
+```javascript
+//假设a为真
+let a = true; // 假设a为真
+let t = {name: "Kimi", age: 30}; // 假设t是一个对象
+let result = a ? _JSON$stringify(t) : ""; // result将会是JSON字符串，即'{"name":"Kimi","age":30}'
+
+// 假设a为假
+let a = false; // 假设a为假
+let t = {name: "Kimi", age: 30}; // 假设t是一个对象
+let result = a ? _JSON$stringify(t) : ""; // result将会是空字符串，即''
+
+```
+
+
+
+解读：
+如果condition为真（truthy），则表达式的结果是valueIfTrue；如果condition为假（falsy），则结果是valueIfFalse。
+
+
+
 # 结束！
 
 

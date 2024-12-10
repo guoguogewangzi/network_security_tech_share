@@ -1273,6 +1273,89 @@ https://www.bilibili.com/video/BV1Bf4y1A7qq?p=111
 
 
 
+
+
+# 补充
+
+
+
+**1.一个完整的立即执行函数表达式 (IIFE) 的语法结构如下：** 
+
+```javascript
+e = (function (e) {
+    // 函数主体：逻辑处理部分
+    return e; // 这个 return 返回处理后的结果
+})(argument); // 括号内的 argument 是传递的实参
+
+```
+
+
+
+**2.void**
+
+```javascript
+void 0 !== i && i && i.navigator && i.navigator.userAgent && i.alert && (n = "test");
+```
+
+等价
+
+```javascript
+if (void 0 !== i && i && i.navigator && i.navigator.userAgent && i.alert) {
+    n = "test";
+}
+```
+
+解读：
+首先：执行这个表达式： i && i && i.navigator && i.navigator.userAgent && i.alert
+其次：两者判断：0 和 （i && i && i.navigator && i.navigator.userAgent && i.alert），判断符号为：!==(不完全等于)，类型不同 或 值不相等 时返回 true
+最后：如果条件成立，则执行：n = "test"
+
+
+
+**3.return后面可以有以下形式**
+
+```javascript
+return {"X-s":b,"X-t":o,};
+```
+
+
+
+**4.for循环：1）好似没有增量，2）没有{}**
+
+```javascript
+let c = "";
+let input = "abcd";
+
+
+for (i = 0; i < input.length;) 
+    (a = input.charCodeAt(i++)), 
+    (b = input.charCodeAt(i++)), 
+    (result = (a + b) >> 1), 
+    (c = c + String.fromCharCode(result));
+```
+
+等价
+
+```javascript
+let c = "";
+let input = "abcd";
+
+for (i = 0; i < input.length;) {
+    let a = input.charCodeAt(i++); // 获取第一个字符的 Unicode 编码
+    let b = input.charCodeAt(i++); // 获取第二个字符的 Unicode 编码
+    let result = (a + b) >> 1; // 将两个字符的编码相加后右移一位
+    c = c + String.fromCharCode(result); // 将结果转为字符并添加到 c
+}
+```
+
+解释：
+
+1.增量在循环体里
+
+2.即循环体通过逗号连接为一句
+
+
+
 # 结束！
 
 
